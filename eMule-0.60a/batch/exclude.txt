@@ -1,0 +1,9 @@
+.obj
+.pdb
+emule.log
+emule.tmpl
+
+config
+emule.tlog
+incoming
+Temp

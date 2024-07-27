@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>id3lib</ProjectName>
+    <ProjectGuid>{4AACBF8D-B90F-41AD-A5BE-D5E557C668E3}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\;..\;..\include;..\include\id3;..\..\zlib</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_LIB;HAVE_CONFIG_H;ID3LIB_LINKOPTION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalOptions>/wd4244 /wd4018 /Zc:throwingNew</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\;..\;..\include;..\include\id3;..\include\zlib</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_LIB;HAVE_CONFIG_H;ID3LIB_LINKOPTION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalOptions>/wd4244 /wd4018 /Zc:throwingNew</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/wd4244 /wd4018 /Zc:throwingNew</AdditionalOptions>
+      <AdditionalIncludeDirectories>.\;..\;..\include;..\include\id3;..\..\zlib</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_LIB;HAVE_CONFIG_H;ID3LIB_LINKOPTION=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/wd4244 /wd4018 /Zc:throwingNew</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\eMule-zlib-1.2.12;.\;..\;..\include;..\include\id3;..\..\zlib</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_LIB;HAVE_CONFIG_H;ID3LIB_LINKOPTION=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnablePREfast>false</EnablePREfast>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\c_wrapper.cpp" />
+    <ClCompile Include="..\src\field.cpp" />
+    <ClCompile Include="..\src\field_binary.cpp" />
+    <ClCompile Include="..\src\field_integer.cpp" />
+    <ClCompile Include="..\src\field_string_ascii.cpp" />
+    <ClCompile Include="..\src\field_string_unicode.cpp" />
+    <ClCompile Include="..\src\frame.cpp" />
+    <ClCompile Include="..\src\frame_impl.cpp" />
+    <ClCompile Include="..\src\frame_parse.cpp" />
+    <ClCompile Include="..\src\frame_render.cpp" />
+    <ClCompile Include="..\src\globals.cpp" />
+    <ClCompile Include="..\src\header.cpp" />
+    <ClCompile Include="..\src\header_frame.cpp" />
+    <ClCompile Include="..\src\header_tag.cpp" />
+    <ClCompile Include="..\src\helpers.cpp" />
+    <ClCompile Include="..\src\io.cpp" />
+    <ClCompile Include="..\src\io_decorators.cpp" />
+    <ClCompile Include="..\src\io_helpers.cpp" />
+    <ClCompile Include="..\src\misc_support.cpp" />
+    <ClCompile Include="..\src\mp3_parse.cpp" />
+    <ClCompile Include="..\src\readers.cpp" />
+    <ClCompile Include="..\src\spec.cpp" />
+    <ClCompile Include="..\src\tag.cpp" />
+    <ClCompile Include="..\src\tag_file.cpp" />
+    <ClCompile Include="..\src\tag_find.cpp" />
+    <ClCompile Include="..\src\tag_impl.cpp" />
+    <ClCompile Include="..\src\tag_parse.cpp" />
+    <ClCompile Include="..\src\tag_parse_lyrics3.cpp" />
+    <ClCompile Include="..\src\tag_parse_musicmatch.cpp" />
+    <ClCompile Include="..\src\tag_parse_v1.cpp" />
+    <ClCompile Include="..\src\tag_render.cpp" />
+    <ClCompile Include="..\src\utils.cpp" />
+    <ClCompile Include="..\src\writers.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\config.h" />
+    <ClInclude Include="..\include\id3\field.h" />
+    <ClInclude Include="..\include\id3\globals.h" />
+    <ClInclude Include="..\include\id3.h" />
+    <ClInclude Include="..\include\id3\helpers.h" />
+    <ClInclude Include="..\include\id3\id3lib_frame.h" />
+    <ClInclude Include="..\include\id3\id3lib_streams.h" />
+    <ClInclude Include="..\include\id3\id3lib_strings.h" />
+    <ClInclude Include="..\include\id3\io_decorators.h" />
+    <ClInclude Include="..\include\id3\io_helpers.h" />
+    <ClInclude Include="..\include\id3\io_strings.h" />
+    <ClInclude Include="..\include\id3\misc_support.h" />
+    <ClInclude Include="..\include\id3\reader.h" />
+    <ClInclude Include="..\include\id3\readers.h" />
+    <ClInclude Include="..\include\id3\sized_types.h" />
+    <ClInclude Include="..\include\id3\tag.h" />
+    <ClInclude Include="..\include\id3\utils.h" />
+    <ClInclude Include="..\include\id3\writer.h" />
+    <ClInclude Include="..\include\id3\writers.h" />
+    <ClInclude Include="..\src\field_def.h" />
+    <ClInclude Include="..\src\field_impl.h" />
+    <ClInclude Include="..\src\flags.h" />
+    <ClInclude Include="..\src\frame_def.h" />
+    <ClInclude Include="..\src\frame_impl.h" />
+    <ClInclude Include="..\src\header.h" />
+    <ClInclude Include="..\src\header_frame.h" />
+    <ClInclude Include="..\src\header_tag.h" />
+    <ClInclude Include="..\src\mp3_header.h" />
+    <ClInclude Include="..\src\spec.h" />
+    <ClInclude Include="..\src\tag_impl.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
