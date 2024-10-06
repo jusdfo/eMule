@@ -1,0 +1,9 @@
+eMule\cryptopp\cryptest.sln
+eMule\CxImage\CxImageLite_vc10.sln
+eMule\id3lib\libprj\id3lib.sln
+eMule\libpng\projects\vstudio\vstudio.sln
+eMule\mbedtls\visualc\VS2010\mbedTLS.sln
+eMule\miniupnp\miniupnpc\msvc\miniupnpc_vs2015.sln
+eMule\ResizableLib\ResizableLib\ResizableLib.sln
+
+eMule\zlib\contrib\vstudio\vc17\zlibvc.sln
